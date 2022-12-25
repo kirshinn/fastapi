@@ -1,6 +1,6 @@
 FROM python:3.9
-WORKDIR /app
-COPY requirements.txt /app/requirements.txt
-RUN pip3 install --no-cache-dir -r /app/requirements.txt
-COPY . /app/
+WORKDIR /src
+COPY requirements.txt /src/requirements.txt
+RUN pip3 install --no-cache-dir -r /src/requirements.txt
+COPY . /src/
 CMD ["uvicorn", "main:app", "--host=0.0.0.0", "--reload"]

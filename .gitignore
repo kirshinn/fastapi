@@ -1,7 +1,10 @@
 # folders
 .idea
-src/__pycache__/
 env
+src/__pycache__/
+src/core/__pycache__/
+src/db/__pycache__/
 
 # files
 .env
+*.DS_Store
